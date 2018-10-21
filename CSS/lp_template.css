@@ -14,7 +14,7 @@ body.noscroll{
 .headfunnel{
     top: 6em;
     background-color: #004080;
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("/Users/ethan/Desktop/SafetyFirst.com/Images/Homepage/funnel2.jpg");
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("/Images/Homepage/funnel2.jpg");
     background-size: cover;
     padding: 30px;
     position: relative;

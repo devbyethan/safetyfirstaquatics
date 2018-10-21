@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="CSS/aos.css">
     <script src="JS/jQuery.js"></script>
     <script src="JS/slick.min.js"></script>
-    <!--     <script src="JS/mediafit.v2.min.js"></script> -->
+    <script src="JS/mediafit.v2.min.js"></script>
     <script src="JS/aos.js"></script>
     <script src="JS/main.js"></script>
 </head>
@@ -69,12 +69,18 @@
             </div>
 
             <div class="mission_images">
-                <img data-aos="fade-up" data-aos-easing="ease-in" 
-                data-aos-duration="800" data-aos-once="true" src="Images/Homepage/mission_img2.jpg">
-                <img data-aos="fade-up" data-aos-easing="ease-in" 
-                data-aos-duration="850" data-aos-once="true" src="Images/Homepage/mission_img3.jpg">
-                <img data-aos="fade-up" data-aos-easing="ease-in" 
-                data-aos-duration="900" data-aos-once="true"  src="Images/Homepage/mission_img4.jpg">
+                <div data-aos="fade-up" data-aos-easing="ease-in" 
+                data-aos-duration="800">
+                    <img class = "js-Mediafit" data-aos-once="true" src="Images/Homepage/mission_img2.jpg">
+                </div>
+                <div  data-aos="fade-up" data-aos-easing="ease-in" 
+                data-aos-duration="850">
+                    <img  class = "js-Mediafit"  data-aos-once="true" src="Images/Homepage/mission_img3.jpg">
+                </div>
+                <div data-aos="fade-up" data-aos-easing="ease-in" 
+                data-aos-duration="900" data-aos-once="true" >
+                    <img class = "js-Mediafit" src="Images/Homepage/mission_img4.jpg">
+                </div>
             </div>
         </div>
 

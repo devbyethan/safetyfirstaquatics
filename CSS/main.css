@@ -25,7 +25,7 @@ body.noscroll{
 }
 
 .hero-image {
-  background-image: url("/Users/ethan/Desktop/SafetyFirst.com/Images/Homepage/hero1.jpg");
+  background-image: url("/Images/Homepage/hero1.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -185,6 +185,14 @@ border: 5px solid var(--main-blue-color);
 .mission_images{
   display: flex;
 }
+
+.mission_images div{
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  width: 34%;
+}
+
 .about{
   background: #e5ebf2;
 }
@@ -540,7 +548,7 @@ i {
 
   .funnel{
     background-color: #004080;
-background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("/Users/ethan/Desktop/SafetyFirst.com/Images/Homepage/funnel2.jpg");
+background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("/Images/Homepage/funnel2.jpg");
 background-size: cover;
 padding: 60px;
   }
