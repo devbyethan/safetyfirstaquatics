@@ -1,0 +1,278 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: white;
+  font-family: sans-serif;
+}
+
+body.noscroll{
+  overflow:hidden;
+  position:fixed;
+}
+
+.headfunnel{
+    top: 6em;
+    background-color: #004080;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("/Users/ethan/Desktop/SafetyFirst.com/Images/Homepage/funnel2.jpg");
+    background-size: cover;
+    padding: 30px;
+    position: relative;
+    display:block;
+}
+
+.headfunnel_container{
+  position: relative;
+  top: 3em;
+  background: white;
+  width: 80%;
+  height: 100px;
+  margin: auto;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+.headfunnel_container h1{
+    font-size: 4em;
+    text-align: center;
+    color: #008080;
+    text-decoration: underline;
+ 
+
+}
+
+.headfunnel .right_corner{
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  height: 200px;
+  width: 200px;
+}
+
+.headfunnel .left_corner{
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  height: 200px;
+  width: 200px;
+  transform: rotate(90deg);
+  -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+.content{
+margin-top: 7em;
+padding: 7em;
+position: relative;
+
+}
+
+.content_container{
+    display: flex;
+    flex-flow: row nowrap;
+ 
+}
+
+.content_desc{
+    display: flex;
+    flex-flow: column;
+    padding-right: 6em;
+}
+
+.content_desc h2{
+    font-size: 2em;
+    color: #004080;
+    text-transform: uppercase;
+
+}
+
+.content_desc p{
+    font-size: 1.1em;
+    line-height: 1.2em;
+
+}
+
+.content_container img{
+    height: 35vh;
+    width: auto;
+}
+
+.funnel{
+    background-color: #008080;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='540' height='450' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
+background-size: auto auto;
+padding: 70px;
+  }
+
+  .funnel_container{
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .funnel_container p{
+    font-size: 30px;
+    line-height: 1.2em;
+  }
+
+  .funnel_container img{
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+    fill: #0b57a5;
+  }
+
+  a.normal:link, a.normal:visited a.normal:hover, a.normal:active{
+    color: #004080;
+  } 
+
+  a.normal{
+      color: #004080;
+      line-height: 1.3em;
+      text-decoration: none;
+  }
+
+  @media screen and (max-width: 1000px) {
+
+    .headfunnel_container h1{
+      font-size: 3em;
+    }
+
+    .content{
+      padding: 2em;
+    }
+    .content_container{
+      flex-flow: row wrap-reverse;
+    }
+
+    .content_container img{
+      margin: auto;
+  }
+    
+
+  }
+
+  @media screen and (max-width: 900px) {
+    
+    
+    .headfunnel .right_corner{
+      top: -5px;
+    }
+    
+    .headfunnel .left_corner{
+      top: -5px;
+    }
+    
+
+  }
+
+  
+  @media screen and (max-width: 800px) {
+    
+    .funnel_container p{
+      font-size: 18px;
+    }
+
+    .content_container img{
+      height: 20vh;
+      width: auto;
+    }
+
+    .content_desc{
+      padding-right: 0;
+    }
+    
+
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .headfunnel_container h1{
+      font-size: 2em;
+    }
+
+    .headfunnel .right_corner{
+      height: 100px;
+      width: 100px;
+    }
+    
+    .headfunnel .left_corner{
+      height: 100px;
+      width: 100px;
+    }
+
+    .funnel_container{
+      flex-flow: row wrap;
+    }
+
+    .ghost_button_link.reverse{
+      font-size: 14px;
+      margin-top: 20px;
+    }
+
+    .ghost_button_link.ghost_button_link.reverse p{
+      margin: auto;
+    }
+    
+  
+  }
+
+  .ghost_button_link{
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background: #004080;
+    border: 1px solid #004080;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+
+  .ghost_button_link.small{
+    width: 100px;
+  }
+  
+  .ghost_button_link:hover{
+    background: white;
+    color: #004080;
+  }
+  
+  .ghost_button_link.large_link{
+    width: 80%;
+  }
+
+
+  .ghost_button_link.reverse{
+    color: #004080;
+    padding: 25px 33px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background: white;
+    border: 1px solid white;
+    white-space: nowrap;
+    margin-top: 0;
+  }
+  
+  .ghost_button_link.reverse:hover{
+    background:#b5cce4;
+    color: #0b57a5;
+    border: 1px solid #b5cce4;
+  }
+  
+  .ghost_button_link.large_link{
+    width: 80%;
+  }
+  
+  .ghost_button_link.reverse:link, .ghost_button_link.reverse:visited .ghost_button_link.reverse:hover, .ghost_button_link.reverse:active{
+    color: #004080;
+  }

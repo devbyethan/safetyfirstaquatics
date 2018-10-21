@@ -1,0 +1,592 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: white;
+  font-family: sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+
+}
+
+body.noscroll{
+  overflow:hidden;
+  position:fixed;
+}
+
+:root {
+    --main-green-color: 0,128,128; 
+    --main-blue-color: #004080; 
+    --green: #008080;
+}
+
+.hero_container{
+
+}
+
+.hero-image {
+  background-image: url("/Users/ethan/Desktop/SafetyFirst.com/Images/Homepage/hero1.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image .rightcorner{
+  height: 15em;
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+
+.hero-image .leftcorner{
+  height: 15em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  width: 500px;
+  color: white;
+  background-color: rgba(var(--main-green-color), 0.5);
+  padding: 40px 70px;
+ -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+border: 5px solid var(--main-blue-color);
+}
+
+.hero-text h1{
+  font-size: 40px;
+}
+
+.hero-text p{
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  color: white;
+  background-color: var(--main-blue-color);
+  text-align: center;
+  cursor: pointer;
+  padding: 30px;
+  font-size: 15px;
+}
+
+.hero-text button:hover {
+  background-color: #668cb2;
+  color: white;
+  
+}
+
+.hero-text_container{
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 950px) {
+
+  .mobile{
+    display: none;
+  }
+
+  .hero-image .rightcorner{
+      top: 90px;
+      height: 10em;
+  }
+
+  .hero-image .leftcorner{
+      height: 10em;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .hero-text {
+      top: 35%;
+      left: 5%;
+      width: 300px;
+    }
+
+    .hero-text h1{
+      font-size: 30px;
+    }
+    
+    .hero-text p{
+      font-size: 15px;
+    }
+
+    .hero-text button {
+      padding: 20px;
+      font-size: 10px;
+    }
+    
+    
+
+}
+
+@media screen and (max-width: 600px) {
+    .hero-text {
+      width: 200px;
+    }
+
+    .hero-text h1{
+      font-size: 20px;
+    }
+    
+    .hero-text p{
+      font-size: 14px;
+    }
+
+    .hero-text button {
+      font-size: 12px;
+    } 
+
+}
+
+.mission{
+  background: #e5f2f2;
+}
+.mission_row{
+  display:flex;
+  flex-flow: row;
+  align-items: center;
+  
+}
+
+.mission_row img{
+  height: 600px;
+  width: auto;
+}
+
+.mission_text{
+  display: flex;
+  flex-flow: column;
+  width: 70%;
+  margin-left: 60px;
+}
+
+.mission_text h2{
+  font-size: 3em;
+}
+
+.mission_text p{
+  font-size: 1.5em;
+}
+
+.mission_images{
+  display: flex;
+}
+.about{
+  background: #e5ebf2;
+}
+.about_row{
+  display:flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.about_row img{
+  height: 600px;
+  width: auto;
+}
+
+.about_text{
+  display: flex;
+  flex-flow: column;
+  width: 70%;
+  margin-left: 60px;
+}
+
+.about_text h2{
+  font-size: 3em;
+}
+
+.about_text p{
+  font-size: 1.5em;
+}
+
+.services_block{
+  background-color: rgb(71,161,248)	;
+}
+
+.services{
+  padding:40px;
+}
+
+.services_desc_container{
+  display: flex;
+}
+.svg_container{
+  height: 80px;
+  width: 80px;
+  background-color: rgb(0,128,128);
+  border-radius: 50%;
+  margin-right: 20px;
+margin-top: 10px;
+}
+.svg_container img.expertwitness{
+  margin-top: 16%;
+}
+
+.svg_container img{
+  height: 50px;
+  width: 80px;
+  margin-top: 20%;
+}
+
+.services_text{
+  height: auto;
+  padding-bottom: 10px;
+  line-height: 1.5em;
+}
+
+/* when the browser window is 800px wide or more: */
+@media screen and (min-width: 800px) {
+  .services_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  .services_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .services{
+    padding:40px;
+    width: 30%;
+  }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+  .services_desc_container{
+    display: flex;
+    flex-flow: column;
+  } 
+
+}
+
+@media screen and (max-width: 1000px) {
+  .services_desc_container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  } 
+  .services_desc{
+    text-align: center;
+  }
+
+}
+
+.client_logos{
+  max-width: 1300px;
+  margin: auto;
+}
+.client_logos_container{
+display: flex;
+flex-flow: row wrap;
+justify-items: center;
+align-items: center;
+padding: 60px;
+justify-content: space-evenly;
+}
+
+.client_logos_container img{
+  height: 85px;
+  width: auto;
+  padding: 10px;
+  }
+
+
+.testimonial{
+  background-image: linear-gradient(to bottom right, #003366, #19538c
+  );
+  padding: 40px;
+}
+
+.testimonial_desc{
+  margin-top: 60px;
+  text-align: center;
+  color: white;
+}
+
+.testimonial_desc p:first-child{
+ font-size: 1.3em;
+ padding: 0 40px;
+}
+
+.testimonial_desc img{
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  margin:auto;
+ }
+
+.testimonial_desc p:last-child{
+  font-size: 20px;
+ }
+
+ @media screen and (max-width: 1000px) {
+
+  .testimonial_desc {
+    margin-top: 20px;
+   }
+
+  .testimonial_desc p:first-child{
+    font-size: 1em;
+   }
+
+   .testimonial_desc p:last-child{
+    font-size: 1em;
+   }
+}
+
+.carousel{
+  background-color:rgb(71,161,248);
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 20px; 
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-right: 15px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin-left: 15px;
+}
+
+.slick-prev {
+  position: absolute;
+  top: 40%;
+  right: calc(100% - 1em);
+  z-index: 1;
+  height: 100px;
+  border: none;
+  background-color: #008080;
+  padding: 20px;
+}
+
+.slick-next {
+  position: absolute;
+  left: calc(100% - 1em);
+  top: 40%;
+  z-index: 1;
+  height: 100px;
+  border: none;
+  background-color: #008080;
+  padding: 20px;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+
+  
+.carousel{
+  width: 70%;
+}
+
+.slick-prev {
+  padding: 10px;
+}
+
+.slick-next {
+  padding: 10px;
+}
+
+i {
+  padding: 10px; 
+}
+  
+
+}
+
+
+.ghost_button {
+  text-decoration: none;
+  border: 1px solid #0b57a5;
+  height: 36px;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 20px 40px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  background-color: #0b57a5;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ghost_button:hover {
+  background: white;
+  color: #0b57a5;
+  border: 1px solid #0b57a5;
+}
+
+.ghost_button_sml {
+  text-decoration: none;
+  border: 1px solid #0b57a5;
+  height: 36px;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 10px 20px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  background-color: #0b57a5;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.ghost_button_sml:hover {
+  background: white;
+  color: #0b57a5;
+  border: 1px solid #0b57a5;
+}
+
+@media screen and (max-width: 600px) {
+  .ghost_button {
+    padding: 10px 20px;
+  }
+  
+}
+
+.ghost_button_link{
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background: #0b57a5;
+  border: 1px solid #0b57a5;
+}
+
+.ghost_button_link:hover{
+  background: white;
+  color: #0b57a5;
+}
+
+.ghost_button_link.large_link{
+  width: 80%;
+}
+
+.ghost_button_link:link, .ghost_button_link:visited .ghost_button_link:hover, .ghost_button_link:active{
+  color: white;
+}
+
+.ghost_button_link.reverse{
+  color: #0b57a5;
+  padding: 25px 33px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background: white;
+  border: 1px solid white;
+  white-space: nowrap;
+}
+
+.ghost_button_link.reverse:hover{
+  background:#b5cce4;
+  color: #0b57a5;
+  border: 1px solid #b5cce4;
+}
+
+.ghost_button_link.large_link{
+  width: 80%;
+}
+
+.ghost_button_link.reverse:link, .ghost_button_link.reverse:visited .ghost_button_link.reverse:hover, .ghost_button_link.reverse:active{
+  color: #0b57a5;
+}
+
+  .funnel{
+    background-color: #004080;
+background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("/Users/ethan/Desktop/SafetyFirst.com/Images/Homepage/funnel2.jpg");
+background-size: cover;
+padding: 60px;
+  }
+
+  .funnel_container{
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    
+  }
+
+  .funnel_container p{
+    font-size: 30px;
+    line-height: 1.2em;
+  }
+
+  .funnel_container img{
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+    fill: #0b57a5;
+  }
+
+  @media screen and (max-width: 800px) {
+
+    .funnel_container p{
+      font-size: 18px;
+    }
+    
+
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .funnel_container{
+      flex-flow: row wrap;
+    }
+
+    .ghost_button_link.reverse{
+      width: 100%;
+    }
+  
+  }
+
+
