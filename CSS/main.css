@@ -88,12 +88,20 @@ border: 5px solid var(--main-blue-color);
   
 }
 
-.hero-text_container{
+.hero-text-container{
   margin-left: 10px;
 }
 
-@media screen and (max-width: 950px) {
+.hero-text-container a{
+  padding: 30px 30px;
+}
 
+@media screen and (max-width: 950px) {
+  .hero-text-container a{
+    padding: 20px 10px;
+    font-size: 14px;
+  }
+  
   .mobile{
     display: none;
   }
@@ -179,7 +187,27 @@ border: 5px solid var(--main-blue-color);
 }
 
 .mission_text p{
-  font-size: 1.5em;
+  font-size: 1.5vw;
+  line-height: 1.3em;
+  padding-right: 4em;
+}
+
+@media only screen and (max-width: 950px){
+  .mission_text{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin-left: 60px;
+  }
+  
+  .mission_text h2{
+    font-size: 2em;
+  }
+  
+  .mission_text p{
+    font-size: 1.2em;
+    padding-right: 60px;
+  }
 }
 
 .mission_images{
@@ -191,6 +219,18 @@ border: 5px solid var(--main-blue-color);
   overflow: hidden;
   height: 400px;
   width: 34%;
+}
+
+@media only screen and (max-width: 960px){
+  .mission_images div{
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    width: 50%;
+  }
+  .middle-img{
+    display:none;
+  }
 }
 
 .about{
@@ -331,9 +371,11 @@ justify-content: space-evenly;
 }
 
 .testimonial_desc{
-  margin-top: 60px;
   text-align: center;
   color: white;
+  display: flex !important;
+    flex-flow: column;
+    justify-content: center;
 }
 
 .testimonial_desc p:first-child{
@@ -354,16 +396,24 @@ justify-content: space-evenly;
 
  @media screen and (max-width: 1000px) {
 
-  .testimonial_desc {
-    margin-top: 20px;
-   }
-
   .testimonial_desc p:first-child{
     font-size: 1em;
    }
 
    .testimonial_desc p:last-child{
     font-size: 1em;
+    padding: 5px;
+   }
+}
+
+@media only screen and (max-width: 600px){
+
+  .testimonial_desc p:first-child{
+    font-size: .9em;
+   }
+
+   .testimonial_desc p:last-child{
+    font-size: .8em;
    }
 }
 
@@ -423,7 +473,7 @@ i {
 
   
 .carousel{
-  width: 70%;
+  width: 85%;
 }
 
 .slick-prev {
@@ -444,7 +494,7 @@ i {
 
 .ghost_button {
   text-decoration: none;
-  border: 1px solid #0b57a5;
+  border: 1px solid #004080;
   height: 36px;
   color: #ffffff;
   font-size: 1em;
@@ -453,7 +503,7 @@ i {
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  background-color: #0b57a5;
+  background-color: #004080;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -463,13 +513,13 @@ i {
 
 .ghost_button:hover {
   background: white;
-  color: #0b57a5;
-  border: 1px solid #0b57a5;
+  color: #004080;
+  border: 1px solid #004080;
 }
 
 .ghost_button_sml {
   text-decoration: none;
-  border: 1px solid #0b57a5;
+  border: 1px solid #004080;
   height: 36px;
   color: #ffffff;
   font-size: 1em;
@@ -478,7 +528,7 @@ i {
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  background-color: #0b57a5;
+  background-color: #004080;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -487,8 +537,8 @@ i {
 
 .ghost_button_sml:hover {
   background: white;
-  color: #0b57a5;
-  border: 1px solid #0b57a5;
+  color: #004080;
+  border: 1px solid #004080;
 }
 
 @media screen and (max-width: 600px) {
@@ -504,25 +554,26 @@ i {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  background: #0b57a5;
-  border: 1px solid #0b57a5;
+  background: #004080;
+  border: 1px solid #004080;
+  cursor: pointer;
 }
 
 .ghost_button_link:hover{
   background: white;
-  color: #0b57a5;
+  color: #004080;
 }
 
 .ghost_button_link.large_link{
   width: 80%;
 }
 
-.ghost_button_link:link, .ghost_button_link:visited .ghost_button_link:hover, .ghost_button_link:active{
+.ghost_button_link:link, .ghost_button_link:visited .ghost_button_link:hover{
   color: white;
 }
 
 .ghost_button_link.reverse{
-  color: #0b57a5;
+  color: #004080;
   padding: 25px 33px;
   text-align: center;
   text-decoration: none;
@@ -534,7 +585,7 @@ i {
 
 .ghost_button_link.reverse:hover{
   background:#b5cce4;
-  color: #0b57a5;
+  color: #004080;
   border: 1px solid #b5cce4;
 }
 
@@ -543,7 +594,7 @@ i {
 }
 
 .ghost_button_link.reverse:link, .ghost_button_link.reverse:visited .ghost_button_link.reverse:hover, .ghost_button_link.reverse:active{
-  color: #0b57a5;
+  color: #004080;
 }
 
   .funnel{
@@ -573,7 +624,7 @@ padding: 60px;
     height: 20px;
     vertical-align: middle;
     margin-left: 10px;
-    fill: #0b57a5;
+    fill: #004080;
   }
 
   @media screen and (max-width: 800px) {
@@ -596,5 +647,3 @@ padding: 60px;
     }
   
   }
-
-

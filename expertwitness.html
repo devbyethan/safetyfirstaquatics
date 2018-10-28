@@ -27,106 +27,213 @@
     <link rel="stylesheet" href="CSS/aos.css">
     <script src="JS/jQuery.js"></script>
     <script src="JS/slick.min.js"></script>
-<!--     <script src="JS/mediafit.v2.min.js"></script> -->
+    <!--     <script src="JS/mediafit.v2.min.js"></script> -->
     <script src="JS/aos.js"></script>
     <script src="JS/main.js"></script>
     <style>
-        .content_container.services{
+       /*  .content_container.services {
             width: 50%;
         }
 
-        .content_container.services p{
+        .content_container.services p {
             color: #004080;
         }
-        .services_container{
+
+        .services_container {
             display: flex;
             flex-flow: row wrap;
         }
-        @media only screen and (max-width: 800px){
-            .content_container.services{
-            width: 100%;
+
+        @media only screen and (max-width: 800px) {
+            .content_container.services {
+                width: 100%;
             }
+        }
+ */
+        .accordion {
+            background-color:#e5f2f2;
+            color: #004080;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 40px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            border-bottom: 2px solid #004080;
+        }
+
+        .accordion:hover {
+            background-color: #7fbfbf;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #004080;
+            font-weight: bold;
+            float: right;
+            font-size: 20px;
+            margin-left: 5px;
+        }
+
+        .live:after {
+            content: "\2212";
+           
+        }
+
+        .textboard {
+            background-color: #e5ebf2;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            padding: 0px 40px;
+            line-height: 1.4em;
         }
     </style>
 </head>
+
 <body>
 
-    <div id="header" data-aos="fade-zoom-in"
-    data-aos-easing="ease-in-back"
-    data-aos-delay="100"
-    data-aos-offset="0"></div>
+    <div id="header" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0"></div>
 
-    <div data-aos="fade-zoom-in"
-    data-aos-easing="ease-in-back"
-    data-aos-delay="200"
-    data-aos-offset="0" class = "headfunnel">
-    <img class = "right_corner" src="Images/Homepage/waves_corner.png">
-        <div class = "headfunnel_container">
-            <h1>Expert Witness </h1>
+    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0" class="headfunnel">
+        <img class="right_corner" src="Images/Homepage/waves_corner.png">
+        <div class="headfunnel_container">
+            <h1>Expert Witness Services</h1>
         </div>
-    <img class = "left_corner"  src="Images/Homepage/waves_corner.png">
+        <img class="left_corner" src="Images/Homepage/waves_corner.png">
     </div>
 
-    <div class = "content"  data-aos="fade-zoom-in"
-    data-aos-easing="ease-in-back"
-    data-aos-delay="300"
-    data-aos-offset="0">
-            <div class = "content_container">
-                <div class = "content_desc">
-                    <h2>Expert Witness</h2>
-                    <p>Juliene R. Hefter, MSOLQ, CPRP, AFOI – Aquatic Safety Consultant, offers a wide variety of services to help prepare your case for trial.  Whether your case involves a catastrophic injury such as a spinal cord injury resulting from a diving accident, or drowning at a pool or beach, let our water safety experts help prepare you for trial.
-                    </p>
-                    <p> The following support services are offered:
-                    </p>
-                    <p>The most important decision you may make with regard to your case may be whether to bring in an expert witness.  With my strong expert testimony and case analysis, you will arm yourself with the tools needed to win a fair settlement or jury verdict. 
-                    </p>
+    <div class="content" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+        <div class="content_container">
+            <div class="content_desc">
+                <h2>Expert Witness</h2>
+                <p>Juliene R. Hefter, MSOLQ, CPRP, AFOI – Aquatic Safety Consultant, offers a wide variety of services
+                    to help prepare your case for trial. Whether your case involves a catastrophic injury such as a
+                    spinal cord injury resulting from a diving accident, or drowning at a pool or beach, let our water
+                    safety experts help prepare you for trial.
+                </p>
+                <p> The following support services are offered:
+                </p>
+                <p>The most important decision you may make with regard to your case may be whether to bring in an
+                    expert witness. With my strong expert testimony and case analysis, you will arm yourself with the
+                    tools needed to win a fair settlement or jury verdict.
+                </p>
+
+                <button class="accordion first">Pretrial Discovery Review and Assistance</button>
+                <div class="textboard">
+                    <p>I will review your discovery materials and offer an analysis of the applicable aquatic standards
+                            of care, enabling you to more accurately assess the merits of your case. Allow me to help
+                            develop your Interrogatories, Answers to Interrogatories, Request for Production of Documents,
+                            expert affidavits, reports and more! </p>
                 </div>
-                <img src = "Images/LP_Images/template.svg">
+
+                <button class="accordion">Site Evaluations</button>
+                <div class="textboard">
+                    <p>I will visit the site of the incident and conduct an on-site investigation to more thoroughly
+                            understand the unique nature of the specific facility. This on-site investigation and accident
+                            reconstruction is essential to building a successful case.</p>
+                </div>
+
+                <button class="accordion">Strengths & Weaknesses</button>
+                <div class="textboard">
+                    <p>Prepare your case for trial or settlement by understanding the attacks that will be made by the
+                            opposing side.</p>
+                </div>
+
+                <button class="accordion">Testimony</button>
+                <div class="textboard">
+                    <p>As an expert witness I will provide sworn testimony at both deposition and trial.</p>
+                </div>
+
+
             </div>
-            <div class = "services_container">
-                <div class = "content_container services">
-                        <div class = "content_desc">
-                            <h3>Pretrial Discovery Review and Assistance</h3>
-                            <p>I will review your discovery materials and offer an analysis of the applicable aquatic standards of care, enabling you to more accurately assess the merits of your case. Allow me to help develop your Interrogatories, Answers to Interrogatories, Request for Production of Documents, expert affidavits, reports and more! </p>
-                        </div>
-                </div>
-                <div class = "content_container services">
-                        <div class = "content_desc">
-                            <h3>Site Evaluations</h3>
-                            <p>I will visit the site of the incident and conduct an on-site investigation to more thoroughly understand the unique nature of the specific facility. This on-site investigation and accident reconstruction is essential to building a successful case. </p>
-                        </div>
-                </div>
-                <div class = "content_container services">
-                        <div class = "content_desc">
-                            <h3>Legal Orientation </h3>
-                            <p>Allow an aquatic expert to brief you on the applicable aquatic standards of care.  I will orient you to the basic standards espoused across the nation. </p>
-                        </div>
-                </div>
-                <div class = "content_container services">
-                        <div class = "content_desc">
-                            <h3>Strengths & Weaknesses </h3>
-                            <p>Prepare your case for trial or settlement by understanding the attacks that will be made by the opposing side.   </p>
-                        </div>
-                </div>
-                <div class = "content_container services">
-                        <div class = "content_desc">
-                            <h3>Testimony</h3>
-                            <p>As an expert witness I will provide sworn testimony at both deposition and trial. </p>
-                        </div>
+
+
+            <img src="Images/LP_Images/expertwitness.svg">
+        </div>
+
+      <!--   <div class="services_container">
+            <div class="content_container services">
+                <div class="content_desc">
+                    <h3>Pretrial Discovery Review and Assistance</h3>
+                    <p>I will review your discovery materials and offer an analysis of the applicable aquatic standards
+                        of care, enabling you to more accurately assess the merits of your case. Allow me to help
+                        develop your Interrogatories, Answers to Interrogatories, Request for Production of Documents,
+                        expert affidavits, reports and more! </p>
                 </div>
             </div>
+            <div class="content_container services">
+                <div class="content_desc">
+                    <h3>Site Evaluations</h3>
+                    <p>I will visit the site of the incident and conduct an on-site investigation to more thoroughly
+                        understand the unique nature of the specific facility. This on-site investigation and accident
+                        reconstruction is essential to building a successful case. </p>
+                </div>
+            </div>
+            <div class="content_container services">
+                <div class="content_desc">
+                    <h3>Legal Orientation </h3>
+                    <p>Allow an aquatic expert to brief you on the applicable aquatic standards of care. I will orient
+                        you to the basic standards espoused across the nation. </p>
+                </div>
+            </div>
+            <div class="content_container services">
+                <div class="content_desc">
+                    <h3>Strengths & Weaknesses </h3>
+                    <p>Prepare your case for trial or settlement by understanding the attacks that will be made by the
+                        opposing side. </p>
+                </div>
+            </div>
+            <div class="content_container services">
+                <div class="content_desc">
+                    <h3>Testimony</h3>
+                    <p>As an expert witness I will provide sworn testimony at both deposition and trial. </p>
+                </div>
+            </div>
+        </div> -->
+
+
     </div>
 
-    <div class = "funnel" >
-        <div class = "funnel_container">
-            <p>Ready to take the next step and schedule your consultation at Safety Frist Aquatics, just fill out our contact form or give us a ring at (XXX)-XXX-XXXX.</p>
-            <a class = "ghost_button_link reverse funnel" href = "">Schedule Consultation<img src = "Images/Homepage/funnelarrow.svg"></a>
+    <div class="funnel">
+        <div class="funnel_container">
+            <p>Ready to take the next step and schedule your consultation at Safety Frist Aquatics, just fill out our
+                contact form or give us a ring at (XXX)-XXX-XXXX.</p>
+            <a class="ghost_button_link reverse funnel" href="">Schedule Consultation<img src="Images/Homepage/funnelarrow.svg"></a>
         </div>
     </div>
 
-   
+
 
     <div id="footer"></div>
 
 </body>
+
+<script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("live");
+            var textboard = this.nextElementSibling;
+            if (textboard.style.maxHeight){
+              textboard.style.maxHeight = null;
+            } else {
+              textboard.style.maxHeight = textboard.scrollHeight + "px";
+            } 
+          });
+        }
+
+        setTimeout(function() {
+            $(".first").trigger( "click" );
+        }, 100);
+
+        
+
+</script>
+
 </html>

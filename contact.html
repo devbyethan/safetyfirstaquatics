@@ -30,6 +30,56 @@
 <!--     <script src="JS/mediafit.v2.min.js"></script> -->
     <script src="JS/aos.js"></script>
     <script src="JS/main.js"></script>
+    <style>
+        form{
+            display: flex;
+            flex-flow: column;
+            padding-bottom: 100px;
+        }
+        .input-wrap{
+            height: 60px;
+            font-size: 20px;
+            display:flex;
+            flex-flow: column;
+            margin: 20px 0px;
+        }
+        .input-wrap input{
+            height: 60px;
+            font-size: 20px;
+            border: 1px solid #008080;
+        }
+        .input-wrap.select{
+            height: 100px;
+        }
+        select{
+            font-size: 20px;
+            border: 1px solid #008080;
+        }
+        .message-wrap{
+            height: 60px;
+            font-size: 20px;
+            display:flex;
+            flex-flow: column;
+        }
+         .message-wrap textarea{
+            height: 150px;
+            font-size: 20px;
+            border: 1px solid #008080;
+        }
+        .submit{
+            top: 6em;
+            font-size: 20px;
+            position: relative;
+            background-color: #008080;
+            border: 1px solid #008080;
+            color: white;
+            padding: 20px 20px;
+            cursor: pointer;
+        }
+        .submit:hover{
+            background-color: #004080;
+        }
+    </style>
 </head>
 <body>
 
@@ -44,7 +94,7 @@
     data-aos-offset="0" class = "headfunnel">
     <img class = "right_corner" src="Images/Homepage/waves_corner.png">
         <div class = "headfunnel_container">
-            <h1>Template</h1>
+            <h1>Contact</h1>
         </div>
     <img class = "left_corner"  src="Images/Homepage/waves_corner.png">
     </div>
@@ -55,29 +105,33 @@
     data-aos-offset="0">
             <div class = "content_container">
                 <div class = "content_desc">
-                    <h2>Conatct</h2>
+                    <h2>PLease Fill Out The From Below And We Will Get Back To You Shortly</h2>
                     <form name="contact" method="POST" netlify>
-                        <p>
-                          <label>Your Name: <input type="text" name="name" /></label>   
-                        </p>
-                        <p>
-                          <label>Your Email: <input type="email" name="email" /></label>
-                        </p>
-                        <p>
-                          <label>Your Role: <select name="role[]" multiple>
-                            <option value="leader">Leader</option>
-                            <option value="follower">Follower</option>
-                          </select></label>
-                        </p>
-                        <p>
-                          <label>Message: <textarea name="message"></textarea></label>
-                        </p>
-                        <p>
-                          <button type="submit">Send</button>
-                        </p>
+                        <div class = "input-wrap">
+                            <label>Name* </label>  
+                            <input type="text" name="name" /> 
+                        </div>
+                        <div class = "input-wrap">
+                            <label>Email* </label>  
+                            <input type="text" name="name" /> 
+                        </div>
+                        <div class = "input-wrap select">
+                          <label>Subject </label>
+                          <select name="role[]" multiple>
+                            <option value="speaking">Speaking Engagement</option>
+                            <option value="Training">Training Class</option>
+                            <option value="Training">General Inquiry</option>
+                          </select>
+                        </div>
+                        <div class = "message-wrap">
+                          <label>Message: </label>
+                          <textarea rows = "10" name="message"></textarea>
+                        </div>
+                        
+                        <button class = "submit" type="submit">Send</button>
                     </form>
                 </div>
-                <img src = "Images/LP_Images/template.svg">
+                <img src = "Images/LP_Images/contact.svg">
             </div>
     </div>
 

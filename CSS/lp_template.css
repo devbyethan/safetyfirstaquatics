@@ -11,6 +11,15 @@ body.noscroll{
   position:fixed;
 }
 
+a.normal:link, a.normal:visited a.normal:hover, a.normal:active{
+  color: #004080;
+}
+
+a.normal{
+  color: #004080;
+  line-height: 1.3em;
+}
+
 .headfunnel{
     top: 6em;
     background-color: #004080;
@@ -74,6 +83,7 @@ position: relative;
 .content_container{
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
  
 }
 
@@ -160,7 +170,7 @@ padding: 70px;
 
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 950px) {
     
     
     .headfunnel .right_corner{

@@ -27,95 +27,150 @@
     <link rel="stylesheet" href="CSS/aos.css">
     <script src="JS/jQuery.js"></script>
     <script src="JS/slick.min.js"></script>
-<!--     <script src="JS/mediafit.v2.min.js"></script> -->
+    <!--     <script src="JS/mediafit.v2.min.js"></script> -->
     <script src="JS/aos.js"></script>
     <script src="JS/main.js"></script>
+    <style>
+        .client_list{
+            display: flex;
+            flex-flow: row wrap;
+            padding: 0;
+        }
+        .client_list li{
+            display: block;
+            text-decoration: none;
+            padding: 10px 10px;
+            border: 1px solid #008080;
+            margin: 10px 10px 10px 0px;
+        }
+
+       .client_list li a:link, a:visited a:hover, a:active{
+            color: #004080;
+        }
+
+        .client_list li a{
+            color: #004080;
+            line-height: 1.3em;
+        }
+
+    </style>
 </head>
+
 <body>
 
-    <div id="header" data-aos="fade-zoom-in"
-    data-aos-easing="ease-in-back"
-    data-aos-delay="100"
-    data-aos-offset="0"></div>
+    <div id="header" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0"></div>
 
-    <div data-aos="fade-zoom-in"
-    data-aos-easing="ease-in-back"
-    data-aos-delay="200"
-    data-aos-offset="0" class = "headfunnel">
-    <img class = "right_corner" src="Images/Homepage/waves_corner.png">
-        <div class = "headfunnel_container">
+    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0" class="headfunnel">
+        <img class="right_corner" src="Images/Homepage/waves_corner.png">
+        <div class="headfunnel_container">
             <h1>Client List</h1>
         </div>
-    <img class = "left_corner"  src="Images/Homepage/waves_corner.png">
+        <img class="left_corner" src="Images/Homepage/waves_corner.png">
     </div>
 
-    <div class = "content"  data-aos="fade-zoom-in"
-    data-aos-easing="ease-in-back"
-    data-aos-delay="300"
-    data-aos-offset="0">
-            <div class = "content_container">
-                <div class = "content_desc">
-                    <h2>Client List</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <img src = "Images/LP_Images/template.svg">
+    <div class="content" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+        <div class="content_container">
+            <div class="content_desc">
+                <h2>Client List</h2>
+                <p>Below you will find a list of past clients. If you would like a list of references and contact information please let us know. </p>
+                <ul class = "client_list">
+                        <li>
+                            <a href="http://www.athleticbusiness.com/default.aspx" target="_blank"> Athletic Business Conference -
+                                15+ years presenting
+                            </a>
+                        </li>
+                        <li>Best, Vanderlaan &amp; Harrington - Attorneys at Law </li>
+                        <li>DeWitt, Ross &amp; Stevens Law Firm</li>
+                        <li>Illinois Park &amp; Recreation Association</li>
+                        <li>Illinois Association of Park Districts</li>
+                        <li>Iowa Park and Recreation Association</li>
+                        <li>Kuchler Law Offices</li>
+                        <li>Laufenberg &amp; Hoefle, S.C - Attorneys at Law</li>
+                        <li>Michigan Recreation &amp; Park Association</li>
+                        <li>Missouri Park &amp; Recreation Association</li>
+                        <li>
+                            <a href="http://www.nrpa.org/" target="_blank">
+                                <font color="#000000">National Recreation and Park Association</font>
+                            </a>
+                        </li>
+                        <li>South Dakota Parks &amp; Recreation, Sioux Falls South Dakota</li>
+                        <li><a href="http://www.wpraweb.org/" target="_blank">
+                                Wisconsin Park &amp; Recreation Association
+                            </a></li>
+                        <li><a href="http://www.lincolnaquatics.com/" target="_blank">
+                                Lincoln Aquatics&nbsp; (California and Arizona Aquatic Facility Operator
+                                    Courses)
+                            </a></li>
+                        <li>Kansas Aquatics Council</li>
+                        <li>Bolingbrook Park District</li>
+                        <li>Oshkosh Recreation and Parks Departments</li>
+                        <li>Ashwaubenon Parks, Recreation and Forestry</li>
+                        <li>West Bend Parks, Recreation and Forestry</li>
+                        <li>North Suburban Special Recreation Association</li>
+                        <li>South Barrington Park District</li>
+                        <li>Human Kinetics (Aqua Tech Program)</li>
+                        <li>Bascum, Budish &amp; Ceman S.C.</li>
+                        <li>Woods &amp; Thompson</li>
+                        <li>Wilson, Elser, Moskowitz, Edelman, Dicker LLP</li>
+                        <li>Liberty Mutual Insurance</li>
+                        <li>Eau Claire Parks &amp; Recreation</li>
+                        <li>Armed Forces (Army) ~ AFO Courses in Orlando and Texas</li>
+                        <li>Marines ~ AFO Courses in Orlando and Texas</li>
+                        <li>Illinois Professional Development School</li>
+                        <li>Great Lakes Regional Council (NRPA)</li>
+                        <li>Sheboygan Falls, WI Police Department (Water rescue techniques)</li>
+                        <li>Athletic Business University (On-Line training programs)</li>
+                        <li>California Aquatic Management School 2010 (CAMS)</li>
+                        <li>TPPC (Texas Public Pool Council) - 2011</li>
+                        <li>Kent &amp; McBride, P.C.</li>
+                        <li>Wilson &amp; Elser&nbsp; </li>
+                        <li>Dietrich Law Firm</li>
+                        <li>Jakeway, Jakeway and Jakeway</li>
+                        <li>City of Bellingham, WA - 2013 Organizational Assessment/Audit</li>
+                        <li>Newby Lewis Kaminski Jones LLP</li>
+                        <li>NIRSA Triventure - Denver, CO 2013</li>
+                        <li>WRPA Aquatic Section Training Retreat - 2013</li>
+                        <li>City of San Antonio, TX - 2013</li>
+                        <li>Island Shores Realty - Website</li>
+                        <li>Cox Architect Group - Website</li>
+                        <li>King &amp; Associates LLC - Website</li>
+                        <li>Hidden Waters Circle - Website</li>
+                        <li>Association of Aquatic Professionals - Website</li>
+                        <li>Upper Island Safety Conference - Campbell River, BC</li>
+                        <li><strong>Wilson Elser Moskowitz Edelman &amp; Dicker LLP</strong></li>
+                        <li>City of Phoenix, Arizona</li>
+                        <li>Washington Recreation and Park Association</li>
+                        <li>United States Airforce</li>
+                        <li>United States Army</li>
+                        <li>Georgia Recreation and Park Association</li>
+                        <li>Parks and Recreation Ontario, Minett, ON</li>
+                        <li><strong>Habush Habush &amp; Rottier S.C</strong></li>
+                        <li><strong>Newby Lewis Kaminski &amp; Jones, LLP</strong></li>
+                        <li><strong>Arnold and Itkin</strong></li>
+                        <li><strong>Wilson Elser Moskowitz Edelman &amp; Dicker LLP</strong></li>
+                        <li><strong>Clifford Law</strong></li>
+                        <li>Southern California Public Pool Operators Association (SCPPOA)</li>
+                        <li>Navy:&nbsp; Practical Pool Management Plus (PPM+) - Hawaii</li>
+                        <li>Penn State:&nbsp; Practical Pool Management Plus (PPM+) - College Station, Pennsylvania</li>
+                    </ul>
             </div>
-            <div class = "client_container">
-                    <img src = "Images/LP_Images/Clients/Client42.jpg">
-                    <img src = "Images/LP_Images/Clients/Client43.jpg">
-                    <img src = "Images/LP_Images/Clients/Client1.png">
-                    <img src = "Images/LP_Images/Clients/Client40.jpg">
-                    <img src = "Images/LP_Images/Clients/Client4.jpg">
-                    <img src = "Images/LP_Images/Clients/Client37.jpg">
-                    <img src = "Images/LP_Images/Clients/Client2.jpg">
-                    <img src = "Images/LP_Images/Clients/Client3.jpg">
-                    <img src = "Images/LP_Images/Clients/Client5.jpg">
-                    <img src = "Images/LP_Images/Clients/Client6.jpg">
-                    <img src = "Images/LP_Images/Clients/Client7.jpg">
-                    <img src = "Images/LP_Images/Clients/Client8.jpg">
-                    <img src = "Images/LP_Images/Clients/Client9.jpg">
-                    <img src = "Images/LP_Images/Clients/Client10.jpg">
-                    <img src = "Images/LP_Images/Clients/Client11.jpg">
-                    <img src = "Images/LP_Images/Clients/Client12.jpg">
-                    <img src = "Images/LP_Images/Clients/Client13.jpg">
-                    <img src = "Images/LP_Images/Clients/Client14.jpg">
-                    <img src = "Images/LP_Images/Clients/Client15.jpg">
-                    <img src = "Images/LP_Images/Clients/Client16.jpg">
-                    <img src = "Images/LP_Images/Clients/Client17.jpg">
-                    <img src = "Images/LP_Images/Clients/Client18.jpg">
-                    <img src = "Images/LP_Images/Clients/Client19.jpg">
-                    <img src = "Images/LP_Images/Clients/Client20.jpg">
-                    <img src = "Images/LP_Images/Clients/Client22.jpg">
-                    <img src = "Images/LP_Images/Clients/Client23.jpg">
-                    <img src = "Images/LP_Images/Clients/Client24.jpg">
-                    <img src = "Images/LP_Images/Clients/Client25.jpg">
-                    <img src = "Images/LP_Images/Clients/Client26.jpg">
-                    <img src = "Images/LP_Images/Clients/Client27.jpg">
-                    <img src = "Images/LP_Images/Clients/Client28.jpg">
-                    <img src = "Images/LP_Images/Clients/Client29.jpg">
-                    <img src = "Images/LP_Images/Clients/Client30.jpg">
-                    <img src = "Images/LP_Images/Clients/Client31.jpg">
-                    <img src = "Images/LP_Images/Clients/Client32.jpg">
-                    <img src = "Images/LP_Images/Clients/Client33.jpg">
-                    <img src = "Images/LP_Images/Clients/Client34.jpg">
-                    <img src = "Images/LP_Images/Clients/Client35.jpg">
-                    <img src = "Images/LP_Images/Clients/Client36.jpg">
-                    <img src = "Images/LP_Images/Clients/Client38.jpg">
-                    <img src = "Images/LP_Images/Clients/Client39.jpg">
-                    <img src = "Images/LP_Images/Clients/Client0.png">
-            </div>
-    </div>
-
-    <div class = "funnel" >
-        <div class = "funnel_container">
-            <p>Ready to take the next step and schedule your consultation at Safety First Aquatics, just fill out our contact form or give us a ring at (XXX)-XXX-XXXX.</p>
-            <a class = "ghost_button_link reverse funnel" href = "">Schedule Consultation<img src = "Images/Homepage/funnelarrow.svg"></a>
+            <img src="Images/LP_Images/clients.svg">
+        </div>
         </div>
     </div>
 
-   
+    <div class="funnel">
+        <div class="funnel_container">
+            <p>Ready to take the next step and schedule your consultation at Safety First Aquatics, just fill out our
+                contact form or give us a ring at (XXX)-XXX-XXXX.</p>
+            <a class="ghost_button_link reverse funnel" href="">Schedule Consultation<img src="Images/Homepage/funnelarrow.svg"></a>
+        </div>
+    </div>
+
+
 
     <div id="footer"></div>
 
 </body>
+
 </html>
