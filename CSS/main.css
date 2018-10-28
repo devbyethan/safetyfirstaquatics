@@ -142,8 +142,13 @@ border: 5px solid var(--main-blue-color);
 }
 
 @media screen and (max-width: 600px) {
+  .hero-image {
+    height: 90vh;
+  }
+
     .hero-text {
       width: 200px;
+      top: 32%;
     }
 
     .hero-text h1{
@@ -157,6 +162,18 @@ border: 5px solid var(--main-blue-color);
     .hero-text button {
       font-size: 12px;
     } 
+
+    .hero-image .rightcorner{
+      top: 90px;
+      height: 8em;
+  }
+
+  .hero-image .leftcorner{
+      height: 8em;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
 
 }
 
