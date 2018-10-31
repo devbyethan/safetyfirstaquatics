@@ -109,6 +109,7 @@ position: relative;
 .content_container img{
     height: 35vh;
     width: auto;
+    border-radius: 10px;
 }
 
 .funnel{
