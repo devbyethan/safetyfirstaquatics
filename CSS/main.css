@@ -180,12 +180,11 @@ border: 5px solid var(--main-blue-color);
   display:flex;
   flex-flow: row;
   align-items: center;
-  
 }
 
 .mission_row img{
-  height: 600px;
-  width: auto;
+  height: auto;
+  width: 30%;
 }
 
 .mission_text{
@@ -203,6 +202,14 @@ border: 5px solid var(--main-blue-color);
   font-size: 1.5vw;
   line-height: 1.3em;
   padding-right: 4em;
+}
+
+@media only screen and (max-width: 1225px){
+  .mission_row img{
+    height: 600px;
+    width: auto;
+  }
+  
 }
 
 @media only screen and (max-width: 950px){
@@ -249,6 +256,7 @@ border: 5px solid var(--main-blue-color);
 .about{
   background: #e5ebf2;
 }
+
 .about_row{
   display:flex;
   flex-flow: row;
@@ -256,8 +264,8 @@ border: 5px solid var(--main-blue-color);
 }
 
 .about_row img{
-  height: 600px;
-  width: auto;
+  height: auto;
+  width: 30%;
 }
 
 .about_text{
@@ -273,6 +281,14 @@ border: 5px solid var(--main-blue-color);
 
 .about_text p{
   font-size: 1.5em;
+}
+
+@media only screen and (max-width: 1225px){
+  .about_row img{
+    height: 600px;
+  width: auto;
+  }
+  
 }
 
 .services_block{
