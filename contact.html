@@ -108,15 +108,15 @@
                     <form name="contact" method="POST" netlify>
                         <div class = "input-wrap">
                             <label>Name* </label>  
-                            <input type="text" name="name" /> 
+                            <input type="text" name="name" required/> 
                         </div>
                         <div class = "input-wrap">
                             <label>Email* </label>  
-                            <input type="text" name="email" /> 
+                            <input type="text" name="email" required/> 
                         </div>
                         <div class = "input-wrap select">
                           <label>Subject </label>
-                          <select name="role[]" multiple>
+                          <select name="role[]" multiple required>
                             <option value="speaking">Speaking Engagement</option>
                             <option value="Training">Training Class</option>
                             <option value="Training">General Inquiry</option>
